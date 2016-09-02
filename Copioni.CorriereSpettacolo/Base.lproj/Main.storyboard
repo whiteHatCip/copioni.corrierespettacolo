@@ -1,26 +1,210 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="MavenPro-Medium.ttf">
+            <string>MavenProMedium</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Copioni_CorriereSpettacolo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qp-lV-JgV">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CORRIERE-SPETTACOLO_LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="br4-yw-Grm"/>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86744034290313721" green="0.33674836158752441" blue="0.33686351776123047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="br4-yw-Grm" firstAttribute="centerX" secondItem="8qp-lV-JgV" secondAttribute="centerX" id="5DJ-aY-PjH"/>
+                                    <constraint firstItem="br4-yw-Grm" firstAttribute="top" secondItem="8qp-lV-JgV" secondAttribute="top" constant="20" id="Nwr-bI-Djg"/>
+                                    <constraint firstItem="br4-yw-Grm" firstAttribute="bottom" secondItem="8qp-lV-JgV" secondAttribute="bottomMargin" id="QcB-V2-Go3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJq-or-KKV">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elenco Copioni" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="SD4-0d-S0T">
+                                        <fontDescription key="fontDescription" name="MavenProMedium" family="Maven Pro" pointSize="17"/>
+                                        <color key="textColor" red="0.86744034290313721" green="0.33674836158752441" blue="0.33686351776123047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21500873565673828" green="0.23484137654304504" blue="0.26396262645721436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="SD4-0d-S0T" firstAttribute="leading" secondItem="SJq-or-KKV" secondAttribute="leadingMargin" id="8uT-iJ-JKQ"/>
+                                    <constraint firstItem="SD4-0d-S0T" firstAttribute="top" secondItem="SJq-or-KKV" secondAttribute="top" constant="11" id="Aic-aK-f8C"/>
+                                    <constraint firstItem="SD4-0d-S0T" firstAttribute="centerY" secondItem="SJq-or-KKV" secondAttribute="centerY" id="Rh4-Jn-mjt"/>
+                                    <constraint firstItem="SD4-0d-S0T" firstAttribute="trailing" secondItem="SJq-or-KKV" secondAttribute="trailingMargin" id="lcc-4X-8d0"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zX1-bj-6fA">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="399" id="FYw-Dd-ZMW"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Article Cell" rowHeight="75" id="DV5-K8-uOe" customClass="ArticleCell" customModule="Copioni_CorriereSpettacolo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DV5-K8-uOe" id="6nm-pY-iez">
+                                            <frame key="frameInset" width="320" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdf" translatesAutoresizingMaskIntoConstraints="NO" id="3Zy-W4-6X2">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="58" id="7Y3-JG-Iin"/>
+                                                        <constraint firstAttribute="width" constant="58" id="dIA-wU-q57"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="58" id="nnW-nf-MQi"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="nnW-nf-MQi"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <exclude reference="7Y3-JG-Iin"/>
+                                                            <include reference="nnW-nf-MQi"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZURLO Carmelo - La fortuna del calzolaio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="6MX-Jg-Keq">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="Nq8-TY-59T"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MavenProMedium" family="Maven Pro" pointSize="18"/>
+                                                    <color key="textColor" red="0.86744034290313721" green="0.33674836158752441" blue="0.33686351776123047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agosto 08, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="hVn-ax-9XR">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="113" id="kpL-rn-0g6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MavenProMedium" family="Maven Pro" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3Zy-W4-6X2" firstAttribute="leading" secondItem="6nm-pY-iez" secondAttribute="leadingMargin" id="9zX-Ev-CKb"/>
+                                                <constraint firstItem="6MX-Jg-Keq" firstAttribute="trailing" secondItem="6nm-pY-iez" secondAttribute="trailingMargin" id="Kpc-uW-ZGH"/>
+                                                <constraint firstItem="hVn-ax-9XR" firstAttribute="bottom" secondItem="6nm-pY-iez" secondAttribute="bottomMargin" id="LG9-1k-TCw"/>
+                                                <constraint firstItem="6MX-Jg-Keq" firstAttribute="leading" secondItem="3Zy-W4-6X2" secondAttribute="trailing" constant="19" id="N1M-mk-H0B"/>
+                                                <constraint firstItem="3Zy-W4-6X2" firstAttribute="top" secondItem="6nm-pY-iez" secondAttribute="topMargin" id="QNx-dY-7Hm"/>
+                                                <constraint firstItem="3Zy-W4-6X2" firstAttribute="bottom" secondItem="6nm-pY-iez" secondAttribute="bottomMargin" id="UcO-Vc-h2V"/>
+                                                <constraint firstItem="hVn-ax-9XR" firstAttribute="leading" secondItem="3Zy-W4-6X2" secondAttribute="trailing" constant="19" id="bBP-V9-tVI"/>
+                                                <constraint firstItem="hVn-ax-9XR" firstAttribute="top" secondItem="6MX-Jg-Keq" secondAttribute="bottom" constant="10.5" id="eB4-CF-nur"/>
+                                                <constraint firstItem="3Zy-W4-6X2" firstAttribute="centerY" secondItem="6nm-pY-iez" secondAttribute="centerY" id="kxA-tv-Jgk"/>
+                                                <constraint firstItem="6MX-Jg-Keq" firstAttribute="top" secondItem="6nm-pY-iez" secondAttribute="topMargin" id="xVE-Hj-uZo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="AuthorAndTitleLbl" destination="6MX-Jg-Keq" id="U3c-UM-MOI"/>
+                                            <outlet property="DateLbl" destination="hVn-ax-9XR" id="rgc-dc-OVh"/>
+                                            <outlet property="pdfImage" destination="3Zy-W4-6X2" id="anc-EO-0u2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xcr-EP-vva">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XYe-uN-6vi"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8qp-lV-JgV" firstAttribute="leading" secondItem="SJq-or-KKV" secondAttribute="leading" id="17L-4y-n8V"/>
+                            <constraint firstItem="8qp-lV-JgV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1EU-RH-JjR"/>
+                            <constraint firstItem="SJq-or-KKV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="86" id="5pV-Bd-3aI"/>
+                            <constraint firstItem="8qp-lV-JgV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BTl-2Y-dgH"/>
+                            <constraint firstItem="xcr-EP-vva" firstAttribute="top" secondItem="SJq-or-KKV" secondAttribute="bottom" id="DAw-aZ-U2Y"/>
+                            <constraint firstItem="zX1-bj-6fA" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="OGd-Tn-zZe"/>
+                            <constraint firstItem="xcr-EP-vva" firstAttribute="trailing" secondItem="zX1-bj-6fA" secondAttribute="trailing" id="P9o-R2-OMe"/>
+                            <constraint firstItem="zX1-bj-6fA" firstAttribute="top" secondItem="xcr-EP-vva" secondAttribute="bottom" id="WDk-n9-zJe"/>
+                            <constraint firstItem="SJq-or-KKV" firstAttribute="leading" secondItem="xcr-EP-vva" secondAttribute="leading" id="a1V-c4-vQg"/>
+                            <constraint firstItem="xcr-EP-vva" firstAttribute="leading" secondItem="zX1-bj-6fA" secondAttribute="leading" id="fFp-2S-hPe"/>
+                            <constraint firstItem="SJq-or-KKV" firstAttribute="top" secondItem="8qp-lV-JgV" secondAttribute="bottom" id="h66-G3-yFt"/>
+                            <constraint firstAttribute="trailing" secondItem="8qp-lV-JgV" secondAttribute="trailing" id="meL-EA-dYB"/>
+                            <constraint firstItem="SJq-or-KKV" firstAttribute="trailing" secondItem="xcr-EP-vva" secondAttribute="trailing" id="oC8-kp-CQ5"/>
+                            <constraint firstItem="8qp-lV-JgV" firstAttribute="trailing" secondItem="SJq-or-KKV" secondAttribute="trailing" id="rfy-Ka-rAt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="xcr-EP-vva" id="RHT-XG-6ZV"/>
+                        <outlet property="tableView" destination="zX1-bj-6fA" id="ni0-T2-p6Z"/>
+                        <segue destination="OsB-NR-qwd" kind="showDetail" identifier="CopioneVC" id="AkV-3y-A9F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="30" y="36.971830985915496"/>
+        </scene>
+        <!--CopioneVC-->
+        <scene sceneID="PQU-P9-G0s">
+            <objects>
+                <viewController id="OsB-NR-qwd" customClass="CopioneVC" customModule="Copioni_CorriereSpettacolo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zAb-XF-PXl"/>
+                        <viewControllerLayoutGuide type="bottom" id="olq-LD-v6v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f03-ux-gwa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twP-ed-kFj">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ni2-r7-Ukv"/>
+                                    <constraint firstAttribute="width" constant="56" id="lpS-ia-JcU"/>
+                                </constraints>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.21500873565673828" green="0.23484137654304504" blue="0.26396262645721436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackBtnPressed:" destination="OsB-NR-qwd" eventType="touchUpInside" id="2F9-n1-E1s"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciR-BD-5wU">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86744034290000005" green="0.33674836159999999" blue="0.33686351780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="twP-ed-kFj" firstAttribute="top" secondItem="f03-ux-gwa" secondAttribute="topMargin" constant="10" id="42g-Jb-YAu"/>
+                            <constraint firstItem="olq-LD-v6v" firstAttribute="top" secondItem="ciR-BD-5wU" secondAttribute="bottom" id="Dmq-oJ-i9D"/>
+                            <constraint firstItem="twP-ed-kFj" firstAttribute="leading" secondItem="f03-ux-gwa" secondAttribute="leadingMargin" id="Ewr-nV-aqF"/>
+                            <constraint firstItem="ciR-BD-5wU" firstAttribute="leading" secondItem="f03-ux-gwa" secondAttribute="leading" id="IYJ-vQ-Gj9"/>
+                            <constraint firstItem="ciR-BD-5wU" firstAttribute="top" secondItem="twP-ed-kFj" secondAttribute="bottom" constant="8" id="PDv-vo-wga"/>
+                            <constraint firstAttribute="trailing" secondItem="ciR-BD-5wU" secondAttribute="trailing" id="beP-HN-NqO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BackBtn" destination="twP-ed-kFj" id="1gd-tS-SE1"/>
+                        <outlet property="webView" destination="ciR-BD-5wU" id="SUu-Rp-QR3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VX9-h6-zjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.5" y="36.971830985915496"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CORRIERE-SPETTACOLO_LOGO" width="350" height="146"/>
+        <image name="pdf" width="128" height="131"/>
+    </resources>
 </document>

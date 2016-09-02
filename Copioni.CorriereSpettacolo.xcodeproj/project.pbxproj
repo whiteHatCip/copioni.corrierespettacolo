@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		8D11285A1D776D4D000B2D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1128591D776D4D000B2D59 /* AppDelegate.swift */; };
-		8D11285C1D776D4D000B2D59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D11285B1D776D4D000B2D59 /* ViewController.swift */; };
+		8D11285C1D776D4D000B2D59 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D11285B1D776D4D000B2D59 /* MainVC.swift */; };
 		8D11285F1D776D4D000B2D59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D11285D1D776D4D000B2D59 /* Main.storyboard */; };
 		8D1128611D776D4D000B2D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1128601D776D4D000B2D59 /* Assets.xcassets */; };
 		8D1128641D776D4D000B2D59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1128621D776D4D000B2D59 /* LaunchScreen.storyboard */; };
+		8D6E19511D79384100529876 /* CopioneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6E19501D79384100529876 /* CopioneVC.swift */; };
+		8DF3377C1D7774CC0048BD81 /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DF3377B1D7774CC0048BD81 /* MavenPro-Medium.ttf */; };
+		8DF3377E1D7776C90048BD81 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF3377D1D7776C90048BD81 /* Article.swift */; };
+		8DF337801D778D8E0048BD81 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF3377F1D778D8E0048BD81 /* ArticleCell.swift */; };
+		8DF337821D7793A80048BD81 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF337811D7793A80048BD81 /* Constants.swift */; };
+		E86717649390067A2F79AA90 /* Pods_Copioni_CorriereSpettacolo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDE357B9113740CFF22B47E /* Pods_Copioni_CorriereSpettacolo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19A53DACCAFF24ACFD4FCA60 /* Pods-Copioni.CorriereSpettacolo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copioni.CorriereSpettacolo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Copioni.CorriereSpettacolo/Pods-Copioni.CorriereSpettacolo.debug.xcconfig"; sourceTree = "<group>"; };
+		4EDE357B9113740CFF22B47E /* Pods_Copioni_CorriereSpettacolo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Copioni_CorriereSpettacolo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F3D5EA827D04312240306A /* Pods-Copioni.CorriereSpettacolo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copioni.CorriereSpettacolo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Copioni.CorriereSpettacolo/Pods-Copioni.CorriereSpettacolo.release.xcconfig"; sourceTree = "<group>"; };
 		8D1128561D776D4D000B2D59 /* Copioni.CorriereSpettacolo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Copioni.CorriereSpettacolo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1128591D776D4D000B2D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D11285B1D776D4D000B2D59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D11285B1D776D4D000B2D59 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		8D11285E1D776D4D000B2D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D1128601D776D4D000B2D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D1128631D776D4D000B2D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D1128651D776D4D000B2D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D6E19501D79384100529876 /* CopioneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopioneVC.swift; sourceTree = "<group>"; };
+		8DF3377B1D7774CC0048BD81 /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Medium.ttf"; sourceTree = "<group>"; };
+		8DF3377D1D7776C90048BD81 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		8DF3377F1D778D8E0048BD81 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		8DF337811D7793A80048BD81 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86717649390067A2F79AA90 /* Pods_Copioni_CorriereSpettacolo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				8D1128581D776D4D000B2D59 /* Copioni.CorriereSpettacolo */,
 				8D1128571D776D4D000B2D59 /* Products */,
+				F7AF597BAC350731F415D82A /* Pods */,
+				D3ED8F190C4967620B5CCB47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,68 @@
 		8D1128581D776D4D000B2D59 /* Copioni.CorriereSpettacolo */ = {
 			isa = PBXGroup;
 			children = (
+				8D1128701D77734F000B2D59 /* Resources */,
+				8D11286D1D776D60000B2D59 /* Controller */,
+				8D11286C1D776D5C000B2D59 /* View */,
+				8D11286B1D776D57000B2D59 /* Model */,
 				8D1128591D776D4D000B2D59 /* AppDelegate.swift */,
-				8D11285B1D776D4D000B2D59 /* ViewController.swift */,
-				8D11285D1D776D4D000B2D59 /* Main.storyboard */,
 				8D1128601D776D4D000B2D59 /* Assets.xcassets */,
-				8D1128621D776D4D000B2D59 /* LaunchScreen.storyboard */,
 				8D1128651D776D4D000B2D59 /* Info.plist */,
 			);
 			path = Copioni.CorriereSpettacolo;
+			sourceTree = "<group>";
+		};
+		8D11286B1D776D57000B2D59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DF3377D1D7776C90048BD81 /* Article.swift */,
+				8DF337811D7793A80048BD81 /* Constants.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8D11286C1D776D5C000B2D59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D11285D1D776D4D000B2D59 /* Main.storyboard */,
+				8D1128621D776D4D000B2D59 /* LaunchScreen.storyboard */,
+				8DF3377F1D778D8E0048BD81 /* ArticleCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8D11286D1D776D60000B2D59 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D11285B1D776D4D000B2D59 /* MainVC.swift */,
+				8D6E19501D79384100529876 /* CopioneVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8D1128701D77734F000B2D59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DF3377B1D7774CC0048BD81 /* MavenPro-Medium.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D3ED8F190C4967620B5CCB47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EDE357B9113740CFF22B47E /* Pods_Copioni_CorriereSpettacolo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7AF597BAC350731F415D82A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19A53DACCAFF24ACFD4FCA60 /* Pods-Copioni.CorriereSpettacolo.debug.xcconfig */,
+				87F3D5EA827D04312240306A /* Pods-Copioni.CorriereSpettacolo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D1128681D776D4D000B2D59 /* Build configuration list for PBXNativeTarget "Copioni.CorriereSpettacolo" */;
 			buildPhases = (
+				14CF5BD9CC4A42AE2E26A4DC /* [CP] Check Pods Manifest.lock */,
 				8D1128521D776D4D000B2D59 /* Sources */,
 				8D1128531D776D4D000B2D59 /* Frameworks */,
 				8D1128541D776D4D000B2D59 /* Resources */,
+				9CAA4349D360A70086C57C95 /* [CP] Embed Pods Frameworks */,
+				AFD821AC9969FA6EE09195B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +171,7 @@
 					8D1128551D776D4D000B2D59 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2G7GKVJVL4;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1128641D776D4D000B2D59 /* LaunchScreen.storyboard in Resources */,
+				8DF3377C1D7774CC0048BD81 /* MavenPro-Medium.ttf in Resources */,
 				8D1128611D776D4D000B2D59 /* Assets.xcassets in Resources */,
 				8D11285F1D776D4D000B2D59 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +208,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14CF5BD9CC4A42AE2E26A4DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CAA4349D360A70086C57C95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copioni.CorriereSpettacolo/Pods-Copioni.CorriereSpettacolo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD821AC9969FA6EE09195B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copioni.CorriereSpettacolo/Pods-Copioni.CorriereSpettacolo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D1128521D776D4D000B2D59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11285C1D776D4D000B2D59 /* ViewController.swift in Sources */,
+				8DF337821D7793A80048BD81 /* Constants.swift in Sources */,
+				8DF337801D778D8E0048BD81 /* ArticleCell.swift in Sources */,
+				8D6E19511D79384100529876 /* CopioneVC.swift in Sources */,
+				8D11285C1D776D4D000B2D59 /* MainVC.swift in Sources */,
 				8D11285A1D776D4D000B2D59 /* AppDelegate.swift in Sources */,
+				8DF3377E1D7776C90048BD81 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +310,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,6 +361,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -259,7 +389,9 @@
 		};
 		8D1128691D776D4D000B2D59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A53DACCAFF24ACFD4FCA60 /* Pods-Copioni.CorriereSpettacolo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2G7GKVJVL4;
 				INFOPLIST_FILE = Copioni.CorriereSpettacolo/Info.plist;
@@ -272,7 +404,9 @@
 		};
 		8D11286A1D776D4D000B2D59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87F3D5EA827D04312240306A /* Pods-Copioni.CorriereSpettacolo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2G7GKVJVL4;
 				INFOPLIST_FILE = Copioni.CorriereSpettacolo/Info.plist;
@@ -302,6 +436,7 @@
 				8D11286A1D776D4D000B2D59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
