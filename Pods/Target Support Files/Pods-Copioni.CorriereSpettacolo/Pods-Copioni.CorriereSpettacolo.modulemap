@@ -1,0 +1,6 @@
+framework module Pods_Copioni_CorriereSpettacolo {
+  umbrella header "Pods-Copioni.CorriereSpettacolo-umbrella.h"
+
+  export *
+  module * { export * }
+}
